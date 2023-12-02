@@ -1,0 +1,136 @@
+/* Link Block Styles */
+.npf-link-block, .post_link {
+  overflow: hidden;
+  display: block!important;
+  margin: 1.5em 0!important;
+  border-radius: var(--borderRadius)!important;
+  color: rgb(var(--accentTextColor));
+  background-color: rgb(var(--accentColor));
+  border: none!important;
+}
+
+.npf-link-block > a, .post_link > a {
+  overflow: hidden;
+  display: block;
+  position: relative;
+  width: auto!important;
+  color: inherit;
+  text-decoration: none;
+}
+
+.npf-link-block .poster, .post_link .poster {
+  overflow: hidden;
+  border: none!important;
+}
+
+.npf-link-block .title, .post_link .title {
+  overflow: visible!important;
+  max-height: none!important;
+  margin: calc((1em / 1.45) * 1.5);
+  padding: 0!important;
+  font-size: 1.45em!important;
+  font-weight: 700!important;
+  line-height: 1.5!important;
+}
+
+.npf-link-block .poster .title, .post_link .poster .title {
+  flex: initial;
+  position: relative!important;
+  margin: 2em;
+  color: #fff;
+}
+
+.npf-link-block .bottom, .post_link .bottom {
+  position: relative;
+  padding: 0!important;
+  line-height: 1.5!important;
+  text-align: justify;
+}
+
+/* Audio Styles */
+.post_audio, .audio-caption {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin: 1.5em 0;
+  padding: 1.5em;
+  color: rgb(var(--accentTextColor));
+  background-color: rgb(var(--accentColor));
+  border-radius: var(--borderRadius);
+}
+
+.audio-caption.processed {
+  opacity: 1;
+}
+
+.audiobox {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.5em;
+  width: 40px;
+  height: 40px;
+}
+
+.playerbutton {
+  flex: none;
+  display: block;
+  overflow: hidden;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  transform: scale(1.5);
+}
+
+.audio_player {
+  margin: -2px 0 0 -5px;
+}
+
+.tumblr_audio_player {
+  width: 34px!important;
+  height: 27px!important;
+}
+
+.svgaudiobutton {
+  flex: none;
+  display: block;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.svgaudiobutton.playable {
+  cursor: pointer;
+}
+
+.svgaudiobutton svg {
+  fill: var(--audioPlayerButtonColor);
+  display: block;
+  margin: 7px;
+  width: 26px;
+  height: 26px;
+}
+
+svg.pausebutton, .svgaudiobutton.playing svg.playbutton {
+  display: none;
+}
+
+.svgaudiobutton.playing svg.pausebutton {
+  display: block;
+}
+
+.audioinfo, .audio-details {
+  flex: auto!important;
+  display: flex!important;
+  flex-direction: column!important;
+  justify-content: center!important;
+  overflow: hidden;
+  min-width: 0;
+  padding: 0!important;
+}
+
+.trackname, .artist, .tmblr-audio-meta.title {
+  /* Add styles here for trackname, artist, and tmblr-audio-meta.title */
+}
